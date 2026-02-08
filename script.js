@@ -1,6 +1,7 @@
 const noBtn = document.getElementById("noBtn");
 const yesBtn = document.getElementById("yesBtn");
 const message = document.getElementById("message");
+const loveSong = document.getElementById("loveSong");
 
 noBtn.addEventListener("mouseover", () => {
   const x = Math.random() * 250;
@@ -11,8 +12,12 @@ noBtn.addEventListener("mouseover", () => {
 });
 
 yesBtn.addEventListener("click", () => {
-  message.innerText = "Yayyy! 💖 I knew you’d say YES 😍";
+  message.innerText = "Yayyy! 💖 I knew you’d say YES 😍 Tak tana nana tandoori nights";
 
+  // Play music
+  loveSong.play();
+
+  // Confetti
   confetti({
     particleCount: 150,
     spread: 70,
